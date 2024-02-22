@@ -16,16 +16,16 @@
     <header>
       <div class="top-bar" id="top-bar">
         <div class="left-top-bar">
-          <span>+9105243200202</span>
-          <span>Trustroot@info.org</span>
+          <span>+91XXXXXXXX91</span>
+          <span>info@trustrootsnetwork.org</span>
         </div>
         <div class="right-top-bar">
-          <span><img class="logo" src="{% static 'images/fb_logo.svg' %}" alt="facebook" /></span>
-          <span><img class="logo" src="{% static 'images/x_logo.svg' %}" alt="twitter" /></span>
-          <span><img class="logo" src="{% static 'images/insta_logo.svg' %}" alt="instagram" /></span>
-          <span><img class="logo" src="{% static 'images/youtube_logo.svg' %}" alt="youtube" /></span>
-          <span><img class="logo" src="{% static 'images/linkedin_logo.svg' %}" alt="linkedin" /></span>
-        </div>
+          <span><a href="https://www.facebook.com"><img class="logo" src="{% static 'images/fb_logo.svg' %}" alt="facebook" /></a></span>
+          <span><a href="https://twitter.com"><img class="logo" src="{% static 'images/x_logo.svg' %}" alt="twitter" /></a></span>
+          <span><a href="https://www.instagram.com"><img class="logo" src="{% static 'images/insta_logo.svg' %}" alt="instagram" /></a></span>
+          <span><a href="https://www.youtube.com"><img class="logo" src="{% static 'images/youtube_logo.svg' %}" alt="youtube" /></a></span>
+          <span><a href="https://www.linkedin.com"><img class="logo" src="{% static 'images/linkedin_logo.svg' %}" alt="linkedin" /></a></span>
+      </div>      
       </div>
 
       <nav>
@@ -35,7 +35,7 @@
               <img width="40vw" src="{% static 'images/trn_logo.png' %}" alt="logo" />
             </li>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#aboutus-div">About</a></li>
             <li><a href="#">Funders</a></li>
             <li><a href="#">Grassroots</a></li>
             <li><a href="#">Work with us</a></li>
@@ -47,6 +47,7 @@
         </div>
       </nav>
     </header>
+    
 
     <div id=" page-content" class="page-content">
       {% block body %} {% endblock %}
@@ -56,7 +57,7 @@
   <!-- ------------------------------ FORM DIV ------------------------------- -->
   <div id="outer-form-div">
     <div class="center-container" id="inner-form-div">
-      <img class="icon" src="{% static 'images/trn_logo.svg' %}" alt="" />
+      <img class="icon" src="{% static 'images/trn_logo.png' %}" alt="" />
       <br /><br />
       <form method="post" id="login-form">
         {% csrf_token %}

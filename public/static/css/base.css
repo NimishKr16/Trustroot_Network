@@ -3,6 +3,7 @@
 
 * {
   font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 200;
 }
 
 /* ---------------------------- CUSTOM SCROLLBAR ---------------------------- */
@@ -35,6 +36,47 @@
   width: 100%;
 }
 
+
+/* SEARCH BAR */
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  width: 300px; /* Adjust width as needed */
+  background-color: rgba(240, 240, 240, 0.9); /* Light grey with transparency */
+  border-radius: 8px; /* Rounded corners */
+  padding: 5px;
+  margin: 0 auto; 
+  margin-top: 20px;
+  z-index: 10;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  
+}
+
+.search-button i {
+  color: #666; /* Adjust color of the search icon */
+  
+}
+
+.search-button img {
+  width: 40px; /* Increase size of the search icon */
+  height: 40px;
+}
 /* ---------------------------- MAIN PAGE CONTENT --------------------------- */
 .page-content {
   padding-top: 60px;
@@ -48,7 +90,7 @@ header {
 }
 
 a {
-  color: #025b52;
+  color: black;
 }
 
 /* ------------------------------- TOP BAR DIV ------------------------------ */
@@ -114,15 +156,18 @@ nav {
 .nav-tabs li {
   height: 100%;
   font-weight: 700;
+  
 }
 
 .nav-tabs a {
   height: 100%;
+  text-decoration: none;
 }
 
 .nav-tabs li a:hover {
-  font-size: 1.3vw;
+  font-size: 1.25vw;
   transition: 0.2s;
+  color: darkgreen;
 }
 
 #login-signup-btn {
@@ -202,3 +247,7 @@ nav {
 .hidden {
   display: none;
 }
+
+
+
+

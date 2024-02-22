@@ -13,12 +13,19 @@
 
 <!-- ---------------------------- BIG IMAGE DIV ---------------------------- -->
 <div id="image-container" class="image-container">
-  <img class="main-image" src="{% static 'images/backtree_crop.png' %}" alt="Main Image">
+  <img class="main-image" src="{% static 'images/back.png' %}" alt="Main Image">
   <div id="img-text" class="img-text">
-    <p>We provide</p>
-    <h1>Trust-based partnerships by providing a searchable platoform of peer-reviewed Grassroots.</h1>
+    <h2>We provide</h2>
+    <h1>Trust-based partnerships by providing a searchable platform of peer-reviewed Grassroots.</h1>
     <button>Learn More</button>
   </div>
+</div>
+<div class="search-container">
+  <input
+    type="text"
+    class="search-input"
+    placeholder="Search for NGOs, Funders & Reviewers"/>
+  <button class="search-button"><i class="fas fa-search"></i></button>
 </div>
 
 <!-- ------------------------- SHOWCASE CARDS DIV -------------------------- -->
@@ -76,19 +83,21 @@
     <p class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate nesciunt voluptatibus ipsam
       minima corrupti
       quidem corporis quia maiores labore nobis! Eos quo inventore quos est optio dolorum ab ea aspernatur?</p>
-    <ul class="customer-care-links" id="customer-care-links">
-      <li>Help Center</li>
-      <li>Terms & Conditions</li>
-      <li>Privacy Policy</li>
-      <li>Returns & Refunds</li>
-      <li>Surveys & Feedbacks</li>
+      <ul class="customer-care-links" id="customer-care-links">
+        <li><a href="#" style="color: white;">Help Center</a></li>
+        <li><a href="#" style="color: white;">Terms & Conditions</a></li>
+        <li><a href="#" style="color: white;">Privacy Policy</a></li>
+        <li><a href="#" style="color: white;">Returns & Refunds</a></li>
+        <li><a href="#" style="color: white;">Surveys & Feedbacks</a></li>
     </ul>
+    
     <ul class="pages-links" id="pages-links">
-      <li>About Us</li>
-      <li>contact Us</li>
-      <li>Services</li>
-      <li>Blog</li>
-    </ul>
+      <li><a href="#" style="color: white;">About Us</a></li>
+      <li><a href="#" style="color: white;">Contact Us</a></li>
+      <li><a href="#" style="color: white;">Services</a></li>
+      <li><a href="#" style="color: white;">Blog</a></li>
+  </ul>
+  
     <!-- <form class="search-area" action="">
       <input type="text" name="search-bar" id="search-bar" placeholder="Search" />
       <button id="search-icon" class="search-icon" type="submit">

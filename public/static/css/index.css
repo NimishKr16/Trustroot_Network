@@ -18,7 +18,7 @@
   left: 20%;
   transform: translateX(-20%);
   color: white;
-  font-weight: 1000;
+  font-weight: bold;
   font-size: 2vw;
   width: 45%;
   align-self: center;
@@ -31,7 +31,49 @@
   border-radius: 15px;
   padding: 0.4vw 2.2vw;
   font-size: 1vw;
-  font-weight: 800;
+  font-weight: bold;
+}
+
+/* ------------------------ SEARCH BAR ----------------------- */
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  width: 300px; /* Adjust width as needed */
+  background-color: rgba(240, 240, 240, 0.9); /* Light grey with transparency */
+  border-radius: 8px; /* Rounded corners */
+  padding: 5px;
+  margin: 0 auto; 
+  margin-top: 2px;
+  /* padding-top: 50px; */
+  z-index: 1000;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  
+}
+
+.search-button i {
+  color: #666; /* Adjust color of the search icon */
+  
+}
+
+.search-button img {
+  width: 40px; /* Increase size of the search icon */
+  height: 40px;
 }
 
 /* -------------------------------- SHOWCASE -------------------------------- */
@@ -214,7 +256,9 @@ footer .info {
   display: flex;
   flex-direction: column;
   padding: 1vw;
+  
 }
+
 
 .customer-care-links li,
 .pages-links li {
